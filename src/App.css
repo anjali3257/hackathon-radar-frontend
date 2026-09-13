@@ -888,21 +888,27 @@ h1 .highlight {
 }
 
 .bw-three-col {
-  background: #111;
-  color: #fff;
+  background: #f7f6f3;
+  padding: 50px 30px 60px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .bw-col {
-  padding: 40px 30px;
-  border-right: 1px solid #333;
+  background: #111;
+  color: #fff;
+  padding: 36px 28px;
+  border-radius: 4px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease;
 }
 
-.bw-col:last-child {
-  border-right: none;
+.bw-col:hover {
+  transform: translateY(-4px);
 }
-
 .bw-col-num {
   font-size: 11px;
   color: #888;
@@ -932,7 +938,7 @@ h1 .highlight {
   text-align: center;
   padding: 80px 30px;
   position: relative;
-  border-top: 1px solid #333;
+  margin-top: 0;
 }
 
 .bw-banner-label {
@@ -1087,7 +1093,7 @@ h1 .highlight {
 @media (max-width: 800px) {
   .bw-wordmark { font-size: 2.8rem; }
   .bw-three-col, .bw-features, .bw-platform-grid { grid-template-columns: 1fr; }
-  .bw-col, .bw-feature { border-right: none; border-bottom: 1px solid #333; }
+  .bw-feature { border-right: none; border-bottom: 1px solid #ddd; }
   .bw-hero-bottom { flex-direction: column; gap: 20px; align-items: flex-start; }
 }
 .bw-banner .bw-btn-fill {
