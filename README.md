@@ -21,7 +21,7 @@ reasons about which ones fit your profile, and registers you automatically.
 
 ## Live Demo
 
-Frontend: [your Vercel URL here]  
+Frontend: https://hackathon-radar-frontend.vercel.app/
 Backend: https://hackathon-radar-backend.onrender.com
 
 ## Safety Design
