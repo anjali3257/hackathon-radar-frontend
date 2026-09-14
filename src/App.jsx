@@ -218,24 +218,34 @@ function App() {
             </div>
           </div>
 
-          <div className="header-graphic">
+                    <div className="header-graphic">
             <svg viewBox="0 0 300 260">
               <rect x="10" y="10" width="280" height="240" rx="6" fill="#1a1a1a" stroke="#333" />
               <rect x="10" y="10" width="280" height="30" rx="6" fill="#222" />
               <circle cx="28" cy="25" r="4" fill="#555" />
               <circle cx="42" cy="25" r="4" fill="#555" />
               <circle cx="56" cy="25" r="4" fill="#555" />
-              <circle cx="150" cy="140" r="60" fill="none" stroke="#444" strokeWidth="1" />
-              <circle cx="150" cy="140" r="38" fill="none" stroke="#444" strokeWidth="1" />
-              <circle cx="150" cy="140" r="4" fill="#fff" />
-              <circle cx="200" cy="100" r="6" fill="#fff" />
-              <circle cx="200" cy="100" r="12" fill="none" stroke="#fff" strokeWidth="1" opacity="0.5" />
-              <circle cx="105" cy="175" r="6" fill="#fff" />
-              <circle cx="105" cy="175" r="12" fill="none" stroke="#fff" strokeWidth="1" opacity="0.5" />
-              <rect x="35" y="60" width="70" height="6" fill="#444" />
-              <rect x="35" y="74" width="50" height="6" fill="#444" />
-            </svg>
-          </div>
+
+              <rect x="35" y="60" width="90" height="7" fill="#555" />
+              <rect x="35" y="74" width="60" height="6" fill="#333" />
+
+              <line x1="35" y1="220" x2="270" y2="220" stroke="#333" strokeWidth="1" />
+              <line x1="35" y1="100" x2="35" y2="220" stroke="#333" strokeWidth="1" />
+
+              <rect x="55" y="170" width="22" height="50" fill="#444" />
+              <rect x="90" y="140" width="22" height="80" fill="#fff" />
+              <rect x="125" y="185" width="22" height="35" fill="#444" />
+              <rect x="160" y="120" width="22" height="100" fill="#fff" />
+              <rect x="195" y="155" width="22" height="65" fill="#444" />
+              <rect x="230" y="105" width="22" height="115" fill="#fff" />
+
+              <polyline
+                points="66,165 101,132 136,178 171,112 206,148 241,98"
+                fill="none"
+                stroke="#4facfe"
+                strokeWidth="2"
+              />
+              <circle cx="241" cy="98" r="5"
         </div>
       </div>
 
