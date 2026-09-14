@@ -206,10 +206,7 @@ function App() {
         <div className="badge"> AI-Powered Agent</div>
         <h1>Never Miss a <span className="highlight">Hackathon</span> Again.</h1>
         <p className="subtitle">Reads live hackathon platforms, reasons about fit to your profile, and registers you — automatically.</p>
-                <div className="header-actions">
-          <button className="profile-btn" onClick={() => setShowLanding(true)}>
-            ← Back to Home
-          </button>
+        <div className="header-actions">
           <button className="profile-btn" onClick={() => setShowProfileForm(!showProfileForm)}>
             {profileSaved ? "Edit Profile" : "Set Up Profile"}
           </button>
