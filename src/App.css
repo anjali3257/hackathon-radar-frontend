@@ -17,8 +17,43 @@ body {
 }
 
 .header {
-  text-align: left;
-  margin-bottom: 40px;
+  max-width: 950px;
+  margin: 40px auto 30px;
+  background: #111;
+  border-radius: 8px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  gap: 30px;
+}
+
+.header-text {
+  flex: 1;
+}
+
+.header-graphic {
+  flex: 0 0 260px;
+}
+
+.header-graphic svg {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 750px) {
+  .header-inner {
+    flex-direction: column;
+  }
+  .header-graphic {
+    flex: 0 0 auto;
+    max-width: 200px;
+  }
 }
 
 .badge {
@@ -48,7 +83,7 @@ h1 .highlight {
 }
 
 .subtitle {
-  color: #aaa;
+  color: #bbb;
 }
 
 .badge {

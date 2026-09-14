@@ -202,14 +202,40 @@ function App() {
   }
   return (
     <div className="app">
-      <div className="header">
-        <div className="badge"> AI-Powered Agent</div>
-        <h1>Never Miss a <span className="highlight">Hackathon</span> Again.</h1>
-        <p className="subtitle">Reads live hackathon platforms, reasons about fit to your profile, and registers you — automatically.</p>
-        <div className="header-actions">
-          <button className="profile-btn" onClick={() => setShowProfileForm(!showProfileForm)}>
-            {profileSaved ? "Edit Profile" : "Set Up Profile"}
-          </button>
+            <div className="header">
+        <div className="header-inner">
+          <div className="header-text">
+            <div className="badge"> AI-Powered Agent</div>
+            <h1>Never Miss a <span className="highlight">Hackathon</span> Again.</h1>
+            <p className="subtitle">Reads live hackathon platforms, reasons about fit to your profile, and registers you — automatically.</p>
+            <div className="header-actions">
+              <button className="profile-btn" onClick={() => setShowLanding(true)}>
+                ← Back to Home
+              </button>
+              <button className="profile-btn" onClick={() => setShowProfileForm(!showProfileForm)}>
+                {profileSaved ? "Edit Profile" : "Set Up Profile"}
+              </button>
+            </div>
+          </div>
+
+          <div className="header-graphic">
+            <svg viewBox="0 0 300 260">
+              <rect x="10" y="10" width="280" height="240" rx="6" fill="#1a1a1a" stroke="#333" />
+              <rect x="10" y="10" width="280" height="30" rx="6" fill="#222" />
+              <circle cx="28" cy="25" r="4" fill="#555" />
+              <circle cx="42" cy="25" r="4" fill="#555" />
+              <circle cx="56" cy="25" r="4" fill="#555" />
+              <circle cx="150" cy="140" r="60" fill="none" stroke="#444" strokeWidth="1" />
+              <circle cx="150" cy="140" r="38" fill="none" stroke="#444" strokeWidth="1" />
+              <circle cx="150" cy="140" r="4" fill="#fff" />
+              <circle cx="200" cy="100" r="6" fill="#fff" />
+              <circle cx="200" cy="100" r="12" fill="none" stroke="#fff" strokeWidth="1" opacity="0.5" />
+              <circle cx="105" cy="175" r="6" fill="#fff" />
+              <circle cx="105" cy="175" r="12" fill="none" stroke="#fff" strokeWidth="1" opacity="0.5" />
+              <rect x="35" y="60" width="70" height="6" fill="#444" />
+              <rect x="35" y="74" width="50" height="6" fill="#444" />
+            </svg>
+          </div>
         </div>
       </div>
 
