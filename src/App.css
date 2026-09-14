@@ -1352,3 +1352,29 @@ h1 .highlight {
   color: #111;
   border-radius: 0;
 }
+/* Force-fix header text visibility inside dark hero card */
+.header-text h1,
+.header-text h1 .highlight {
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
+}
+
+.header-text .badge {
+  color: #fff !important;
+  border-color: #fff !important;
+}
+
+.header-text .subtitle {
+  color: #ccc !important;
+}
+
+.header-text .profile-btn {
+  color: #fff !important;
+  border-color: #fff !important;
+  background: transparent !important;
+}
+
+.header-text .profile-btn:hover {
+  background: #fff !important;
+  color: #111 !important;
+}
