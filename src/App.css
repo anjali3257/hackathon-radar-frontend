@@ -17,9 +17,8 @@ body {
 }
 
 .header {
-  padding: 50px 40px 30px;
-  max-width: 950px;
-  margin: 0 auto;
+  text-align: left;
+  margin-bottom: 40px;
 }
 
 .badge {
