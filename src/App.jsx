@@ -203,10 +203,13 @@ function App() {
   return (
     <div className="app">
       <div className="header">
-        <div className="badge">⚡ AI-Powered Agent</div>
+        <div className="badge"> AI-Powered Agent</div>
         <h1>Never Miss a <span className="highlight">Hackathon</span> Again.</h1>
         <p className="subtitle">Reads live hackathon platforms, reasons about fit to your profile, and registers you — automatically.</p>
-        <div className="header-actions">
+                <div className="header-actions">
+          <button className="profile-btn" onClick={() => setShowLanding(true)}>
+            ← Back to Home
+          </button>
           <button className="profile-btn" onClick={() => setShowProfileForm(!showProfileForm)}>
             {profileSaved ? "Edit Profile" : "Set Up Profile"}
           </button>
