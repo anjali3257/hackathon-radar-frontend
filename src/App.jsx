@@ -218,7 +218,7 @@ function App() {
             </div>
           </div>
 
-                    <div className="header-graphic">
+                            <div className="header-graphic">
             <svg viewBox="0 0 300 260">
               <rect x="10" y="10" width="280" height="240" rx="6" fill="#1a1a1a" stroke="#333" />
               <rect x="10" y="10" width="280" height="30" rx="6" fill="#222" />
@@ -245,8 +245,9 @@ function App() {
                 stroke="#4facfe"
                 strokeWidth="2"
               />
-              <circle cx="241" cy="98" r="5"
-        </div>
+              <circle cx="241" cy="98" r="5" fill="#4facfe" />
+            </svg>
+          </div>
       </div>
 
       {showProfileForm && (
