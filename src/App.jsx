@@ -197,15 +197,17 @@ function App() {
 
   const registeredListings = listings.filter((l) => l.registrationStatus === "submitted");
   const urgentCount = listings.filter((l) => l.urgencyFlag).length;
+
   if (showLanding) {
     return <LandingPage onGetStarted={() => setShowLanding(false)} />;
   }
+
   return (
     <div className="app">
-            <div className="header">
+      <div className="header">
         <div className="header-inner">
           <div className="header-text">
-            <div className="badge"> AI-Powered Agent</div>
+            <div className="badge">AI-Powered Agent</div>
             <h1>Never Miss a <span className="highlight">Hackathon</span> Again.</h1>
             <p className="subtitle">Reads live hackathon platforms, reasons about fit to your profile, and registers you — automatically.</p>
             <div className="header-actions">
@@ -218,7 +220,7 @@ function App() {
             </div>
           </div>
 
-                            <div className="header-graphic">
+          <div className="header-graphic">
             <svg viewBox="0 0 300 260">
               <rect x="10" y="10" width="280" height="240" rx="6" fill="#1a1a1a" stroke="#333" />
               <rect x="10" y="10" width="280" height="30" rx="6" fill="#222" />
@@ -248,6 +250,7 @@ function App() {
               <circle cx="241" cy="98" r="5" fill="#4facfe" />
             </svg>
           </div>
+        </div>
       </div>
 
       {showProfileForm && (
@@ -351,7 +354,7 @@ function App() {
               <h3>{listing.title}</h3>
               <span className="score">{listing.relevanceScore}/10</span>
             </div>
-                      <p className="platform">{listing.sourcePlatform}</p>
+            <p className="platform">{listing.sourcePlatform}</p>
             {listing.eligibility && <p className="eligibility">Eligibility: {listing.eligibility}</p>}
             {listing.techFocus && listing.techFocus.length > 0 && (
               <div className="tech-tags">
